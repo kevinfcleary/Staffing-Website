@@ -1,0 +1,14 @@
+<doctype html>
+<title>New Record - Teneo Staffing Database</title>
+<h2>New Record</h2>
+ 
+{% from "_formhelpers.html" import render_field %}
+<form method=post>
+    <dl>
+        {{ render_field(form.employee_name) }}
+        {{ render_field(form.client_name) }}
+        {{ render_field(form.role) }}
+        {{ render_field(form.time_spent) }}
+    </dl>
+    <p><input type=submit value=Submit>
+</form>
